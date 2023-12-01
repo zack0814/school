@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/* 全局样式 */
+.ui-page {
+    background-image: url('PIC/背景.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* 头部样式 */
+[data-role="header"] {
+    flex: 0 0 auto; /* 固定在顶部 */
+    text-align: center; /* 文字居中 */
+    background-color: transparent; /* 透明背景 */
+}
+
+[data-role="header"] h1 {
+    margin: 0; /* 去除标题的默认边距 */
+    font-size: 50px; /* 调整字体大小为36px */
+    color: #000000; /* 修改字体颜色为红色 */
+}
+
+/* 内容样式 */
+[data-role="content"] {
+    flex: 1 1 auto; /* 自动占据剩余空间 */
+    overflow-y: auto; /* 添加纵向滚动条 */
+}
+
+.cover-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.cover-content h2 {
+    font-size: 24px;
+}
+
+/* 页脚样式 */
+[data-role="footer"] {
+    flex: 0 0 auto; /* 固定在底部 */
+    text-align: center; /* 文字居中 */
+    background-color: transparent; /* 透明背景 */
+}
+
+/* 修改页脚文本样式 */
+[data-role="footer"] h4 {
+    margin: 0; /* 去除文本的默认边距 */
+    font-size: 14px;
+}
+
+/* 链接按钮样式 */
+.ui-btn.ui-corner-all.ui-shadow {
+    width: 200px;
+}
